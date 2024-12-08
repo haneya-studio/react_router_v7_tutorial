@@ -1,0 +1,10 @@
+services: 
+  spa:
+    build: .
+    container_name: hoge
+    ports:
+      - '4173:80'
+    volumes:
+      - ./ssg/build/client:/usr/local/apache2/htdocs/
+      # - ./spa/build/client:/usr/local/apache2/htdocs/
+
